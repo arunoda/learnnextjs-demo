@@ -1,22 +1,15 @@
 {
-  "name": "learnnextjs-demo",
+  "name": "hello-next",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/arunoda/learnnextjs-demo.git"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "next"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/arunoda/learnnextjs-demo/issues"
-  },
-  "homepage": "https://github.com/arunoda/learnnextjs-demo#readme",
   "dependencies": {
     "next": "^2.0.0-beta.39",
     "react": "^15.4.2",
