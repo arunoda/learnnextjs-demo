@@ -14,7 +14,7 @@ export default () => (
     <h1>My Blog</h1>
     <ul>
       {getPosts().map((post) => (
-        <li>
+        <li key={post.id}>
           <Link as={`/p/${post.id}`} href={`/post?title=${post.title}`}>
             <a>{post.title}</a>
           </Link>
