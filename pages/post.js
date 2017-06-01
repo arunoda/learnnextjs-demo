@@ -6,7 +6,7 @@ export default (props) => (
    <h1>{props.url.query.title}</h1>
    <div className="markdown">
      <Markdown content={`
-This is out blog post.
+This is our blog post.
 Yes. We can have a [link](/link).
 And we can have a title as well.
 
