@@ -1,21 +1,45 @@
 import Layout from '../components/MyLayout.js'
 import Link from 'next/link'
+import loadDB from '../lib/load-db'
 
 const PostLink = (props) => (
   <li>
-    <Link as={`/p/${props.id}`} href={`/post?title=${props.title}`}>
+    <Link as={`/p/${props.id}`} href={`/post?id=${props.id}`}>
       <a>{props.title}</a>
     </Link>
   </li>
 )
 
-export default () => (
+const Index = ({ stories }) => (
   <Layout>
-    <h1>My Blog</h1>
+    <h1>Hacker News - Latest</h1>
     <ul>
-      <PostLink id="hello-nextjs" title="Hello Next.js"/>
-      <PostLink id="learn-nextjs" title="Learn Next.js is awesome"/>
-      <PostLink id="deploy-nextjs" title="Deploy apps with Zeit"/>
+      {stories.map(story => (
+        <PostLink
+          key={story.id}
+          id={story.id}
+          title={story.title}
+        />
+      ))}
     </ul>
   </Layout>
 )
+
+Index.getInitialProps = async () => {
+  const db = await loadDB()
+
+  const ids = await db.child('topstories').once('value')
+  let stories = await Promise.all(
+    ids.val().slice(0, 10).map(id => db
+      .child('item')
+      .child(id)
+      .once('value')
+    )
+  )
+
+  stories = stories.map(s => s.val())
+
+  return { stories }
+}
+
+export default Index
