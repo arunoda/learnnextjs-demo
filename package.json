@@ -15,9 +15,9 @@
   "dependencies": {
     "cross-env": "^5.0.1",
     "marked": "^0.3.6",
-    "next": "beta",
-    "react": "^15.4.2",
-    "react-dom": "^15.4.2",
+    "next": "^4.2.0",
+    "react": "^16.2.0",
+    "react-dom": "^16.2.0",
     "react-highlight": "^0.10.0",
     "webpack-bundle-analyzer": "^2.8.3"
   }
