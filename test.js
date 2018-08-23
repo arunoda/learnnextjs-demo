@@ -100,19 +100,19 @@
 
 //compare two objects
 
-const a = {a:2,b:1,c:4}
-const b= {a:1,b:1,c:3}
+// const a = {a:2,b:1,c:4}
+// const b= {a:1,b:1,c:3}
 
-function compare(a,b){
-    let diff = {};
-   for (var value in a) {
-    for (var secVal in b) {
-       if(value===secVal){
-         if(a[value]!==b[value])
-         diff[value]=a[value]
-        }
-    }
-  }
-   console.log(diff)
-}
-compare(a,b)
+// function compare(a,b){
+//     let diff = {};
+//    for (var value in a) {
+//     for (var secVal in b) {
+//        if(value===secVal){
+//          if(a[value]!==b[value])
+//          diff[value]=a[value]
+//         }
+//     }
+//   }
+//    console.log(diff)
+// }
+// compare(a,b)
