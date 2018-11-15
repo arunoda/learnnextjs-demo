@@ -4,12 +4,15 @@
   "description": "",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "next"
+    "dev": "next",
+    "build": "next build",
+    "start": "next start -p 8000"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "cross-env": "^5.2.0",
     "next": "^6.1.1",
     "react": "^16.4.2",
     "react-dom": "^16.4.2"
