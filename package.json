@@ -17,5 +17,8 @@
     "next": "^7.0.2",
     "react": "^16.4.2",
     "react-dom": "^16.4.2"
+  },
+  "devDependencies": {
+    "now": "^12.1.11"
   }
 }
