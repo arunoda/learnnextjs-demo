@@ -4,13 +4,16 @@
   "description": "",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "next"
+    "dev": "next",
+    "build": "next build",
+    "start": "next start -p $PORT"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "next": "^6.1.1",
+    "next": "^7.0.2",
+    "now": "^12.1.11",
     "react": "^16.4.2",
     "react-dom": "^16.4.2"
   }
