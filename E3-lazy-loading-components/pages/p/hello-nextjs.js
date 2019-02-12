@@ -1,6 +1,6 @@
-import WithPost from '../../lib/with-post'
+import withPost from '../../lib/with-post'
 
-export default WithPost({
+export default withPost({
   title: 'Hello Next.js',
   content: `
 Creating a page in a Next.js app is pretty simple.
@@ -15,5 +15,5 @@ export default () => (
   </div>
 )
 ~~~
-  `
+`
 })

@@ -9,7 +9,7 @@ marked.setOptions({
   breaks: true
 })
 
-export default function WithPost(options) {
+export default function withPost(options) {
   return class PostPage extends React.Component {
     render() {
       return (
