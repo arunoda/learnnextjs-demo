@@ -9,16 +9,14 @@ marked.setOptions({
   breaks: true
 })
 
-export default function WithPost (options) {
+export default function WithPost(options) {
   return class PostPage extends React.Component {
-    render () {
+    render() {
       return (
         <MyLayout>
           <h1>{options.title}</h1>
           <div>
-            <Highlight innerHTML>
-              {marked(options.content)}
-            </Highlight>
+            <Highlight innerHTML>{marked(options.content)}</Highlight>
           </div>
         </MyLayout>
       )
