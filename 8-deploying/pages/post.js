@@ -1,9 +1,10 @@
+import { withRouter } from 'next/router'
 import Layout from '../components/MyLayout.js'
 import Markdown from 'react-markdown'
 
-export default props => (
+export default withRouter(props => (
   <Layout>
-    <h1>{props.url.query.title}</h1>
+    <h1>{props.router.query.title}</h1>
     <div className="markdown">
       <Markdown
         source={`
@@ -38,4 +39,4 @@ And here's the content.
       }
     `}</style>
   </Layout>
-)
+))
