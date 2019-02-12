@@ -1,10 +1,10 @@
 # learnnextjs-demo
 
-This repository is meant to be used in associated with the nextjs tutorial on nextjs.org/learn.
+This repository is meant to be used in associated with the Next.js tutorial on https://nextjs.org/learn.
 
 ## Setup
 
-There is two ways to start using this repository:
+There are two ways to start using this repository:
 
 - [**Download a zipped version of this repo**](https://github.com/arunoda/learnnextjs-demo/archive/getting-started.zip)
 
